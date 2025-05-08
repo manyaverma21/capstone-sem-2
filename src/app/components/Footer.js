@@ -1,21 +1,21 @@
 import Link from "next/link"
 import Image from "next/image"
-import styles from "../styles/Footer.css"
+import "../styles/Footer.css"
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.container}>
-        <div className={styles.footerContent}>
-          <div className={styles.footerLogo}>
+    <footer className="footer">
+      <div className="container">
+        <div className="footerContent">
+          <div className="footerLogo">
             <Link href="/">
-              <Image src="/placeholder.svg?height=50&width=150" alt="Culinary Delights" width={150} height={50} />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2A5IcjbmkJ31j11Qo9cI9f0OYtLg477rOnw&s" alt="Culinary Delights" width={150} height={50} />
             </Link>
             <p>Discover the art of cooking with our expert recipes and culinary tips.</p>
           </div>
 
-          <div className={styles.footerLinks}>
-            <div className={styles.linkColumn}>
+          <div className="footerLinks">
+            <div className="linkColumn">
               <h4>Quick Links</h4>
               <ul>
                 <li>
@@ -36,7 +36,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className={styles.linkColumn}>
+            <div className="linkColumn">
               <h4>Categories</h4>
               <ul>
                 <li>
@@ -57,7 +57,7 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className={styles.linkColumn}>
+            <div className="linkColumn">
               <h4>Legal</h4>
               <ul>
                 <li>
@@ -73,11 +73,11 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className={styles.footerContact}>
+          <div className="footerContact">
             <h4>Contact Us</h4>
             <p>Email: info@culinarydelights.com</p>
             <p>Phone: +1 (555) 123-4567</p>
-            <div className={styles.socialLinks}>
+            <div className="socialLinks">
               <Link href="https://facebook.com" aria-label="Facebook">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
@@ -110,7 +110,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className={styles.footerBottom}>
+        <div className="footerBottom">
           <p>&copy; {new Date().getFullYear()} Culinary Delights. All rights reserved.</p>
         </div>
       </div>

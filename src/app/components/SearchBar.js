@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import styles from "../styles/SearchBar.css"
+import "../styles/SearchBar.css"
 
 export default function SearchBar() {
   const [searchQuery, setSearchQuery] = useState("")
@@ -12,17 +12,17 @@ export default function SearchBar() {
   }
 
   return (
-    <div className={styles.searchContainer}>
-      <div className={styles.container}>
-        <form onSubmit={handleSearch} className={styles.searchForm}>
+    <div className="searchContainer">
+      <div className="container">
+        <form onSubmit={handleSearch} className="searchForm">
           <input
             type="text"
             placeholder="Search for recipes, cooking tips, or ingredients..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className={styles.searchInput}
+            className="searchInput"
           />
-          <button type="submit" className={styles.searchButton}>
+          <button type="submit" className="searchButton">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

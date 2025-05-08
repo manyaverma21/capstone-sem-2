@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import styles from "../styles/HeroSection.css"
+import "../styles/HeroSection.css"
 
 export default function HeroSection() {
   const [formData, setFormData] = useState({
@@ -32,31 +32,31 @@ export default function HeroSection() {
   }
 
   return (
-    <section className={styles.heroSection}>
-      <div className={styles.heroOverlay}></div>
-      <div className={styles.container}>
-        <div className={styles.heroContent}>
-          <div className={styles.heroText}>
+    <section className="heroSection">
+      <div className="heroOverlay"></div>
+      <div className="container">
+        <div className="heroContent">
+          <div className="heroText">
             <h1>Discover the Art of Culinary Excellence</h1>
             <p>Explore thousands of recipes, cooking tips, and culinary inspiration from chefs around the world.</p>
-            <button className={styles.ctaButton}>Explore Recipes</button>
+            <button className="ctaButton">Explore Recipes</button>
           </div>
 
-          <div className={styles.heroForm}>
-            <div className={styles.formContainer}>
+          <div className="heroForm">
+            <div className="formContainer">
               <h3>Get in Touch</h3>
               <form onSubmit={handleSubmit}>
-                <div className={styles.formGroup}>
+                <div className="formGroup">
                   <label htmlFor="name">Name</label>
                   <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
                 </div>
 
-                <div className={styles.formGroup}>
+                <div className="formGroup">
                   <label htmlFor="email">Email</label>
                   <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
                 </div>
 
-                <div className={styles.formGroup}>
+                <div className="formGroup">
                   <label htmlFor="message">Message</label>
                   <textarea
                     id="message"
@@ -67,7 +67,7 @@ export default function HeroSection() {
                   ></textarea>
                 </div>
 
-                <button type="submit" className={styles.submitButton}>
+                <button type="submit" className="submitButton">
                   Send Message
                 </button>
               </form>
